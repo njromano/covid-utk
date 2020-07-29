@@ -17,3 +17,6 @@ We need people to help contribute suggestions and updating any data that is manu
 
 ### Contributors
 Nick Romano [@nromano](https://twitter.com/nromanodev)
+
+## License
+[MIT](README.md)
