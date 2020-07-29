@@ -1,6 +1,8 @@
 # COVID@UTK
 This website to provide a dashboard for the University of Tennessee community to be better informed on COVID cases in their area.
 
+https://njromano.github.com/covid-utk
+
 Join the beta email list: https://forms.gle/aopZKVgn12NgfMj19
 
 ## Data sources
