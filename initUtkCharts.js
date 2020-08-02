@@ -3,7 +3,7 @@ const utkCovidCases ={
   "faculty":3,
   "staff": 9,
   "cumulativeSinceJune8": 100,
-  "updated": "7/31/20 16:39"
+  "updated": "8/1/20 11:04"
 }
 
 document.getElementById('utk-stats-updated').textContent = utkCovidCases.updated;
