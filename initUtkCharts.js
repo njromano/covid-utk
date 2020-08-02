@@ -1,8 +1,8 @@
 const utkCovidCases ={
   "students": 14,
   "faculty":3,
-  "staff": 8,
-  "cumulativeSinceJune8": 99,
+  "staff": 9,
+  "cumulativeSinceJune8": 100,
   "updated": "7/31/20 16:39"
 }
 
