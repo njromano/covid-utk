@@ -88,19 +88,34 @@ fetch(url)
   .then(() => {
     const dates = knoxRows.map(row => row.date);
     const cases = knoxRows.map(row => row.cases);
+    // calculate new cases
+    const newCases = [0];
+    for (let i = 1; i < cases.length; i++) {
+      const newCaseCount = cases[i] - cases[i-1];
+      newCases.push(newCaseCount);
+    }
+    // calculate new deaths
+    const newDeaths = [0];
     const deaths = knoxRows.map(row => row.deaths);
+    for (let i = 1; i < deaths.length; i++) {
+      const newDeathCount = deaths[i] - deaths[i-1];
+      newDeaths.push(newDeathCount);
+    }
+    let lastIndex = cases.length - 1;
+    document.getElementById('knox-cases-cumulative').textContent = cases[cases.length - 1];
+    document.getElementById('knox-deaths-cumulative').textContent = deaths[deaths.length - 1];
     initChart({
       id: 'knox-cases-chart',
       dates,
-      data: cases,
-      label: 'Cumulative cases in Knox County',
+      data: newCases,
+      label: 'New cases in Knox County',
       color: 'orange'
     });
     initChart({
       id: 'knox-deaths-chart',
       dates,
-      data: deaths,
-      label: 'Cumulative deaths in Knox County',
+      data: newDeaths,
+      label: 'New deaths in Knox County',
       color: 'red'
     });
   });
