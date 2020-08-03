@@ -1,3 +1,5 @@
+// manually updated from https://veoci.com/veoci/p/form/4jmds5x4jj4j#tab=entryForm
+// eventually should be automatic!!
 const utkCovidCases ={
   "students": 14,
   "faculty":3,
