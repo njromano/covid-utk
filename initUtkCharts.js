@@ -1,11 +1,11 @@
 // manually updated from https://veoci.com/veoci/p/form/4jmds5x4jj4j#tab=entryForm
 // eventually should be automatic!!
 const utkCovidCases ={
-  "students": 14,
+  "students": 17,
   "faculty":3,
-  "staff": 9,
-  "cumulativeSinceJune8": 100,
-  "updated": "8/1/20 11:04"
+  "staff": 7,
+  "cumulativeSinceJune8": 103,
+  "updated": "8/3/20 15:22"
 }
 
 document.getElementById('utk-stats-updated').textContent = utkCovidCases.updated;
