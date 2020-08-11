@@ -2,14 +2,15 @@
 // eventually should be automatic!!
 const utkCovidCases ={
   "students": 16,
-  "faculty":3,
-  "staff": 5,
+  "faculty":4,
+  "staff": 4,
   "cumulativeSinceJune8": 113,
+  "cumulativeSinceAugust9: 2,
   "updated": "8/10/20 08:24"
 }
 
 document.getElementById('utk-stats-updated').textContent = utkCovidCases.updated;
-document.getElementById('utk-cumulative-since').textContent = utkCovidCases.cumulativeSinceJune8;
+document.getElementById('utk-cumulative-since').textContent = utkCovidCases.cumulativeSinceJune8 + utkCovidCases.cumulativeSinceAugust9;
 let ctx = document.getElementById('current-utk-cases-chart').getContext('2d');
 
 new Chart(ctx, {
