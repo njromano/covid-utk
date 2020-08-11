@@ -5,7 +5,7 @@ const utkCovidCases ={
   "faculty":4,
   "staff": 4,
   "cumulativeSinceJune8": 113,
-  "cumulativeSinceAugust9: 2,
+  "cumulativeSinceAugust9": 2,
   "updated": "8/11/20 08:28"
 }
 
