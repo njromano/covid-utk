@@ -18,7 +18,7 @@ const latestCitedCases = {
 }
 
 document.getElementById('utk-stats-updated').textContent = "8/13/2020";
-document.getElementById('utk-cumulative-since').textContent = latestCitedCases.studentsLivingOnCampus + latestCitedCases.studentsLivingOffCampus + latestCistedCasts.employees;
+document.getElementById('utk-cumulative-since').textContent = latestCitedCases.studentsLivingOnCampus + latestCitedCases.studentsLivingOffCampus + latestCisedCases.employees;
 let ctx = document.getElementById('current-utk-cases-chart').getContext('2d');
 
 new Chart(ctx, {
