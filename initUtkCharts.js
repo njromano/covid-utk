@@ -18,7 +18,7 @@ const latestCitedCases = {
 }
 
 document.getElementById('utk-stats-updated').textContent = "8/13/2020";
-document.getElementById('utk-cumulative-since').textContent = latestCitedCases.studentsLivingOnCampus + latestCitedCases.studentsLivingOffCampus + latestCisedCases.employees;
+document.getElementById('utk-cumulative-since').textContent = latestCitedCases.studentsLivingOnCampus + latestCitedCases.studentsLivingOffCampus + latestCitedCases.employees;
 let ctx = document.getElementById('current-utk-cases-chart').getContext('2d');
 
 new Chart(ctx, {
@@ -27,7 +27,7 @@ new Chart(ctx, {
     labels: ['Students (On-Campus)', 'Students (Off-Campus)', 'Employees'],
     datasets: [{
       label: 'Active cases',
-      data: [latestCitedCases.studentsLivingOnCampus, latestCitedCases.studentsLivingOffCampus, latestCitedCasts.employees],
+      data: [latestCitedCases.studentsLivingOnCampus, latestCitedCases.studentsLivingOffCampus, latestCitedCases.employees],
       backgroundColor: ['orange', 'blue', 'gray'],
     }]
   },
