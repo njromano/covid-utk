@@ -9,17 +9,25 @@ const utkCovidCases ={
   "updated": "8/11/20 08:28"
 }
 
-document.getElementById('utk-stats-updated').textContent = utkCovidCases.updated;
-document.getElementById('utk-cumulative-since').textContent = utkCovidCases.cumulativeSinceJune8ThroughAugust8 + utkCovidCases.cumulativeSinceAugust9;
+// latest cited news https://www.knoxnews.com/story/news/education/2020/08/13/university-tennessee-knoxville-active-covid-19-cases/5555098002/
+// 8/13/2020
+const latestCitedCases = {
+  "studentsLivingOnCampus": 13,
+  "studentsLivingOffCampus": 69,
+  "employees": 73
+}
+
+document.getElementById('utk-stats-updated').textContent = "8/13/2020";
+document.getElementById('utk-cumulative-since').textContent = latestCitedCases.studentsLivingOnCampus + latestCitedCases.studentsLivingOffCampus + latestCistedCasts.employees;
 let ctx = document.getElementById('current-utk-cases-chart').getContext('2d');
 
 new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ['Students', 'Faculty', 'Staff'],
+    labels: ['Students (On-Campus)', 'Students (Off-Campus)', 'Employees'],
     datasets: [{
       label: 'Active cases',
-      data: [utkCovidCases.students, utkCovidCases.faculty, utkCovidCases.staff],
+      data: [latestCitedCases.studentsLivingOnCampus, latestCitedCases.studentsLivingOffCampus, latestCitedCasts.employees],
       backgroundColor: ['orange', 'blue', 'gray'],
     }]
   },
