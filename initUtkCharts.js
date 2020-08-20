@@ -30,7 +30,6 @@ const activeUtkCases = [
   ["08/18", 8, 89, 97],
 ]
 
-document.getElementById('utk-stats-updated').textContent = activeUtkCases[activeUtkCases.length -1][0];
 let ctx = document.getElementById('current-utk-cases-chart').getContext('2d');
 let myChart = new Chart(ctx, {
   type: 'line',

@@ -5,7 +5,7 @@ let deathsIncrease = [];
 let hospitalizedCurrently = [];
 let positiveCases = [];
 let positiveIncrease = [];
-fetch('https://covidtracking.com/api/v1/states/tn/daily.json')
+fetch('https://api.covidtracking.com/\/v1/states/tn/daily.json')
   .then(r => r.json().then(json => data = json.reverse()))
   //.then(() => console.log(data))
   .then(() => {
@@ -109,7 +109,8 @@ fetch(url)
       dates,
       data: newCases,
       label: 'New cases in Knox County',
-      color: 'orange'
+      color: 'orange',
+
     });
     initChart({
       id: 'knox-deaths-chart',
