@@ -21,21 +21,21 @@ fetch('https://api.covidtracking.com/\/v1/states/tn/daily.json')
       id: 'new-cases-chart',
       dates,
       data: positiveIncrease,
-      label: 'Daily new cases in TN',
+      label: 'Increase of cases in TN',
       color: 'orange'
     });
     initChart({
       id: 'new-deaths-chart',
       dates,
       data: deathsIncrease,
-      label: 'Daily new deaths in TN',
+      label: 'Increase of deaths in TN',
       color: 'red'
     });
     initChart({
       id: 'hospitalized-chart',
       dates,
       data: hospitalizedCurrently,
-      label: 'Daily hospitalization in TN',
+      label: 'Active hospitalizations in TN',
       color: 'blue'
     });
 
