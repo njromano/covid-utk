@@ -28,6 +28,7 @@ const activeUtkCases = [
   ["08/16", 9, 60, 69],
   ["08/17", 9, 66, 75],
   ["08/18", 8, 89, 97],
+  ["08/19", 8, 97, 105]
 ]
 
 let ctx = document.getElementById('current-utk-cases-chart').getContext('2d');
